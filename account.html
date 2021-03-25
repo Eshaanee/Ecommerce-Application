@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type content="text/html" charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<title>All Products-OnlineStore</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+</head>
+
+<body>
+<div class="header">
+	<div class="container">
+	<div class="navbar">
+		<div class="logo">
+			<h1>
+				<p style="font-family:cursive">OnlineShopping</p>
+			</h1>
+		</div>
+		<nav>
+			
+			<ul>
+
+               <li><a href="#"><i class="fa fa-search"></i></a></li>
+				<li><a href="index.html">Home</a></li>
+
+				<li><a href="">Products</a>
+					<div class="submenu">
+
+					<ul>
+						<li><a href="fashion.html">Fashion</a></li>
+						<li><a href="electronics.html">Electronics</a></li>
+						<li><a href="home&garden.html">Home & Garden</a></li>
+						<li><a href="books.html">Books</a></li>
+						<li><a href="toys.html">Toys</a></li>
+					</ul>
+					</div>
+
+                </li>
+				<li><a href="">About</a></li>
+				<li><a href="">Contact</a></li>
+				<li><a href="account.html">Account</a></li>
+
+			</ul>
+		</nav>
+
+            <img src="images/cart.png" width="20px" height="20px">                     
+                       
+	</div>
+	
+		
+	</div>
+	</div>
+	</div>
+	
+<!------Account------>
+<div class="account-page">
+	<div class="container">
+		<div class="row">
+			<div class="col-2">
+		<div class="form-container">
+			<div class="form-btn">
+				<span onclick="login()">Login</span>
+				<span onclick="register()">Register</span>
+				<hr id="Indicator">
+			</div>
+			<form id="LoginForm">
+				<input type="text" placeholder="Username">
+				<input type="password" placeholder="Password">
+				<button type="submit" class="btn">Login</button>
+				<a href="#">Forgot Password?</a>
+
+			</form>
+			<form id="RegForm">
+				<input type="text" placeholder="Username">
+				<input type="email" placeholder="Email">
+				<input type="password" placeholder="Password">
+				<button type="submit" class="btn">Register</button>
+
+			</form>
+			
+		</div>
+		
+	</div>
+	</div>
+</div>
+</div>
+
+
+				
+<!------footer---->
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			
+			<div class="footer-col-1">
+				<h3>INFORMATION</h3>
+				<ul>
+					<li>About Us</li>
+					<li>Delivery Information</li>
+					<li>Privacy Policy</li>
+					<li>Term & Condition</li>
+					<li>Manufactures</li>
+
+				</ul>
+
+
+			</div>
+			<div class="footer-col-2">
+				<h3>MY ACCOUNT</h3>
+				<ul>
+					<li>My Account</li>
+					<li>My Cart</li>
+					<li>Login</li>
+					<li>Wishlist</li>
+					<li>Checkout</li>
+
+				</ul>
+
+
+			</div>
+			
+			<div class="footer-col-3">
+				<h3>FOLLOW US</h3>
+				<ul>
+					<li>Facebook</li>
+					<li>Twitter</li>
+					<li>Instagram</li>
+					<li>YouTube</li>
+				</ul>
+
+
+			</div>
+			
+		</div>
+
+</div>
+		<hr>
+		
+			<img src="images/payment.png" class="pay-img">
+		<p class="copyright"> Copyright 2021-OnlineStore</p>
+	</div>
+	
+
+</div>
+    <!-- Footer Area End -->
+    
+    <!----js for toggle--->
+    <script>
+    	var LoginForm = document.getElementById("LoginForm");
+    	var RegForm = document.getElementById("RegForm");
+    	var Indicator = document.getElementById("Indicator");
+function register(){
+	RegForm.style.transform = "translateX(0px)";
+	LoginForm.style.transform = "translateX(0px)";
+	Indicator.style.transform = "translateX(100px)";
+
+}
+function login(){
+	RegForm.style.transform = "translateX(300px)";
+	LoginForm.style.transform = "translateX(300px)";
+	Indicator.style.transform = "translateX(0px)";
+
+}
+    	
+    </script>
+    
+</body>
+</html>
